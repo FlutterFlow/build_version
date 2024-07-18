@@ -44,7 +44,7 @@ class _VersionBuilder implements Builder {
     await buildStep.writeAsString(buildStep.allowedOutputs.single, '''
 // Generated code. Do not modify.
 const packageVersion = '${pubspec.version}';
-final buildTimeMs = ${DateTime.now().millisecondsSinceEpoch};
+const buildTimeMs = ${DateTime.now().millisecondsSinceEpoch};
 ''');
   }
 
